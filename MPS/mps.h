@@ -3,13 +3,6 @@
 
 #include "STbase.h"
 
-struct sock_fd {
-    int sock_fd;
-    struct pollfd *pollptr;
-    void *data;
-    ST_linker_t list;
-};
-
 typedef struct _MPS_MSG {
     unsigned int MID;      //message ID
     unsigned int GID;      //group ID
